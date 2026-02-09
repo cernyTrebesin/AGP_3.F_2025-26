@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text">Předmět ICT je můj neojoblíbenější</p>
+    <form>
+        <label for="formular">Zadej hodnotu:</label>
+        <input type="text" id="formular">
+        <button id="tlac">Odeslat</button>
+    </form>
+    <script>
+        let text = document.getElementById("text") // Propejení prvku s JS
+        //let text2 = document.querySelector("#text")
+
+        text.style.color = "orange"
+        text.style.fontSize = "50px"
+        text.style.backgroundColor = "black"
+        text.innerText = "Předmět AGP je můj nejoblíbenější"
+        let button = document.getElementById("tlac")
+        let input = document.querySelector("#formular")
+        let a
+        
+        function uprava(){
+            a = input.value
+            alert(a)
+        }
+        button.addEventListener("click", uprava)
+        
+    </script>
+</body>
+</html>

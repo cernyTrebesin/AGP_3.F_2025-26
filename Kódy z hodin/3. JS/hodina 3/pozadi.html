@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="telo">
+    <button id="tlac">Zmeň barvu</button>
+
+    <script>
+        let tlacitko = document.getElementById("tlac")
+        let pozadi = document.getElementById("telo")
+        tlacitko.addEventListener("click", zmenBarvu)
+
+        function zmenBarvu(){
+            let cislo = Math.floor(Math.random() * 6)
+            if(cislo == 0){
+                pozadi.style.backgroundColor = "Red"
+            }else if(cislo == 1){
+                pozadi.style.backgroundColor = "Pink"
+            }else if(cislo == 2){
+                pozadi.style.backgroundColor = "Green"
+            }else if(cislo == 3){
+                pozadi.style.backgroundColor = "Blue"
+            }else if(cislo == 4){
+                pozadi.style.backgroundColor = "Orange"
+            }else if(cislo == 5){
+                pozadi.style.backgroundColor = "Black"
+            }
+
+        }
+    </script>
+</body>
+</html>
