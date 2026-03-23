@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do while cyklus</title>
+</head>
+<body>
+    <script>
+        /*while(i > 5){
+            alert("Ahoj!")
+        }
+
+
+        do{
+            alert("Ahoj!")
+        }while(i > 5)
+        */
+        /*
+        
+        let username = "cerny"
+        let heslo = "Heslo79it"
+        let inputUsername
+        let inputHeslo
+        do{
+            inputUsername = window.prompt("Zadej jméno")
+            inputHeslo = window.prompt("Zadej heslo")
+        }while(inputUsername != username || inputHeslo != heslo)
+
+        alert("Jsi přihlášen")
+        */
+
+        let suma = 0
+        let penize
+
+        do{
+            penize = Number(window.prompt("Kolik peněz přidáš do kasičky"))
+            suma += penize // suma = suma + penize
+            if(Math.floor(Math.random() * 5)  == 1){
+                suma = 0
+                alert("Zloděj ti ukradl všechny peníze")
+            }
+            alert(suma)
+        }while(suma < 500)
+
+        alert("V kasičce je 500 a vedle zbylo " + (suma - 500))
+    </script>
+</body>
+</html>
